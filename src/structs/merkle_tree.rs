@@ -1,5 +1,3 @@
-use std::{os::macos::raw, ptr::NonNull};
-
 use sha256::digest;
 
 #[derive(Clone)]
