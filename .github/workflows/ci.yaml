@@ -11,7 +11,7 @@ on:
       - "**.md"
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-22.04
 
     steps:
@@ -32,8 +32,8 @@ jobs:
       # Needed for gcc install
       - run: sudo apt update && sudo apt install -y build-essential
       - uses: Swatinem/rust-cache@v2
-      # - name: "Check linting"
-      # run: make check-lint
+      - name: "Check linting"
+        run: make check-lint
       # Tests will be added after NCTL interaction is possible.
       - name: "Tests"
         run: make test

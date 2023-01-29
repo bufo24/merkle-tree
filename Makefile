@@ -9,3 +9,6 @@ run: build
 
 test: build
 	cargo test
+
+check-lint:
+	cargo clippy -- -D warnings
