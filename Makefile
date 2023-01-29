@@ -12,3 +12,6 @@ test: build
 
 check-lint:
 	cargo clippy -- -D warnings
+
+lint:
+	cargo clippy --fix
