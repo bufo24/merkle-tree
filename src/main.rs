@@ -16,5 +16,4 @@ fn main() {
     println!("{}", tree.get_hash());
     // let root = tree.get_root();
     // println!("{}", root.get_hash());
-    // tree.print(None);
 }
