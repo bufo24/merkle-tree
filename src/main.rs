@@ -1,5 +1,3 @@
-use std::{env, fs};
-
 use merkle_tree::structs::merkle_tree::MerkleTree;
 
 fn main() {
